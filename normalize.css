@@ -1,4 +1,5 @@
 /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* four53/ fork with Presentate-specific adjustments (rem units) */
 
 /* ==========================================================================
    HTML5 display definitions
@@ -126,6 +127,10 @@ strong {
     font-weight: bold;
 }
 
+blockquote {
+    margin: 1em rem(2);
+}
+
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
@@ -201,6 +206,28 @@ sub {
     bottom: -0.25em;
 }
 
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Set margin in rem, not px
+ */
+
+dd {
+    margin: 0 0 0 rem(2);
+}
+
+/*
+ * Set padding in rem, not px
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 rem(2);
+}
+
 /* ==========================================================================
    Embedded content
    ========================================================================== */
@@ -239,11 +266,12 @@ figure {
 
 /**
  * Define consistent border, margin, and padding.
+ * (four53) Remove border, margin
  */
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
+    border: 0;
+    margin: 0;
     padding: 0.35em 0.625em 0.75em;
 }
 
